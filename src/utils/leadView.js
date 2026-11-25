@@ -9,7 +9,7 @@ const STATUS = {
 };
 
 const KYIV_TIME = new Intl.DateTimeFormat('uk-UA', {
-  timeZone: 'Europe/Kyiv',
+  timeZone: 'UTC',
   day: '2-digit',
   month: '2-digit',
   year: 'numeric',

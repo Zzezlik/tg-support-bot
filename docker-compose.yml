@@ -8,7 +8,7 @@ services:
       - .env
     environment:
       NODE_ENV: production
-      TZ: Europe/Kyiv
+      TZ: UTC
       DATA_FILE: /app/data/leads.json
       SETTINGS_FILE: /app/data/settings.json
     volumes:

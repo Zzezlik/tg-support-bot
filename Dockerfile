@@ -9,7 +9,7 @@ RUN npm ci --omit=dev && npm cache clean --force
 FROM node:20-alpine AS runner
 
 ENV NODE_ENV=production
-ENV TZ=Europe/Kyiv
+ENV TZ=UTC
 
 WORKDIR /app
 

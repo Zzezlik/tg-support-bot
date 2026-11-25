@@ -106,7 +106,7 @@ npm run dev         # with --watch auto-reload
 | `CONTACTS_EN` | no | Initial "Contacts" text EN |
 | `SERVICES_UK` | no | Initial "Services" text UK |
 | `SERVICES_EN` | no | Initial "Services" text EN |
-| `TZ` | no | Timezone for timestamps (default: `Europe/Kyiv`) |
+| `TZ` | no | Timezone for timestamps (default: `UTC`) |
 | `LOG_LEVEL` | no | `error` \| `warn` \| `info` \| `debug` (default: `info`) |
 
 ## Admin Commands
