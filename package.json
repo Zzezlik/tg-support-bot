@@ -1,0 +1,22 @@
+{
+  "name": "tg-support-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Telegram support bot for collecting leads and notifying admins with UK/EN localization",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "chatid": "node scripts/get-chat-id.js",
+    "check": "find src scripts -name '*.js' -print0 | xargs -0 -n1 node --check",
+    "test": "node /tmp/opencode/tg-flow-test.mjs && node /tmp/opencode/i18n-test.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "grammy": "^1.48.0"
+  }
+}

@@ -1,0 +1,18 @@
+services:
+  bot:
+    build: .
+    image: tg-support-bot:latest
+    container_name: tg-support-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      TZ: Europe/Kyiv
+      DATA_FILE: /app/data/leads.json
+      SETTINGS_FILE: /app/data/settings.json
+    volumes:
+      - bot-data:/app/data
+
+volumes:
+  bot-data:
